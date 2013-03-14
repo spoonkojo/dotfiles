@@ -51,3 +51,5 @@ set smarttab       " <BS> removes shiftwidth worth of spaces
 set softtabstop=2  " spaces for editing, e.g. <Tab> or <BS>
 set tabstop=2      " spaces for <Tab>
 
+" NERDTree
+let NERDTreeShowHidden = 1
