@@ -1,0 +1,53 @@
+"
+" ~/.vimrc
+"
+" Comptability 
+" -----------------------------------------------------------------------------
+"
+set nocompatible         " Disable vi-compatibility
+set laststatus=2         " Always show the statusline
+set encoding=utf-8       " Necessary to show Unicode glyphs
+
+" Vundle
+" -----------------------------------------------------------------------------
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'Shougo/neocomplcache'
+Bundle 'godlygeek/tabular'
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'w0ng/vim-hybrid'
+
+filetype plugin indent on
+
+" Settings 
+" -----------------------------------------------------------------------------
+
+" Color
+syntax on
+set t_Co=256
+colorscheme hybrid
+
+" Powerline
+let g:Powerline_symbols = 'fancy'
+
+" General
+"set colorcolumn=80 " visibal indicator of column
+set mouse=a        " enable mouse on all modes
+set number         " show line numbers
+set title          " use filename in window title
+set wildmenu       " enhanced cmd line completion
+
+" Tabs
+set autoindent     " copy indent from previous line
+set expandtab      " replace tabs with spaces
+set shiftwidth=2   " spaces for autoindenting
+set smarttab       " <BS> removes shiftwidth worth of spaces
+set softtabstop=2  " spaces for editing, e.g. <Tab> or <BS>
+set tabstop=2      " spaces for <Tab>
+
