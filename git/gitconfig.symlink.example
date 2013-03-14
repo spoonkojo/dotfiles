@@ -3,12 +3,22 @@
 	email = AUTHOREMAIL
 [core]
 	excludefiles = ~/.gitignore
+	editor = vim
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
 [alias]
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	glog = log --format='%Cgreen%h%Creset %C(cyan)%an%Creset - %s' --graph
 	lolm = log --graph --decorate --format='%h %an - %d %s' --abbrev-commit --all
 	lolc = log --graph --decorate --format='%C(yellow)%h%Creset %C(green)%an%Creset%C(red bold)%d%Creset %s' --abbrev-commit --all -10
+	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
+	lgn = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
 [color]
 	branch = auto
 	diff = auto
