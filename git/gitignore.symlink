@@ -7,4 +7,10 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+.VolumeIcon.icns
+.fseventsd
+Icon^M^M
+.dropbox
+Icon
+Icon\r
 node_modules
