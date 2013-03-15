@@ -31,7 +31,7 @@ filetype plugin indent on
 " Color
 syntax on
 set t_Co=256
-colorscheme hybrid
+silent!  colorscheme hybrid
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
