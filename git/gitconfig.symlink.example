@@ -2,7 +2,7 @@
 	name = AUTHORNAME 
 	email = AUTHOREMAIL
 [core]
-	excludefiles = ~/.gitignore
+	excludesfile = ~/.gitignore
 	editor = vim
 [merge]
 	tool = diffmerge
