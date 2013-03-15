@@ -10,6 +10,16 @@ set encoding=utf-8       " Necessary to show Unicode glyphs
 
 " Vundle
 " -----------------------------------------------------------------------------
+let iCanHazVundle=1
+let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle.."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
+    let iCanHazVundle=0
+endif
+
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -24,6 +34,10 @@ Bundle 'tpope/vim-surround'
 Bundle 'w0ng/vim-hybrid'
 
 filetype plugin indent on
+
+if iCanHazVundle == 0
+    :BundleInstall
+endif
 
 " Settings 
 " -----------------------------------------------------------------------------
