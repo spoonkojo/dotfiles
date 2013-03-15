@@ -122,8 +122,13 @@ install_dotfiles () {
   done
 }
 
+vundle_bundle_install () {
+  vim +BundleInstall +qall
+}
+
 setup_gitconfig
 install_dotfiles
+vundle_bundle_install
 
 echo ''
 echo '  All installed!'

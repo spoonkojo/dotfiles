@@ -1,24 +1,3 @@
 [submodule "vim/vim.symlink/bundle/vundle"]
     path = vim/vim.symlink/bundle/vundle
     url = https://github.com/gmarik/vundle.git
-[submodule "vim/vim.symlink/bundle/neocomplcache"]
-    path = vim/vim.symlink/bundle/neocomplcache
-    url = https://github.com/Shougo/neocomplcache.git
-[submodule "vim/vim.symlink/bundle/tabular"]
-    path = vim/vim.symlink/bundle/tabular
-    url = https://github.com/godlygeek/tabular.git
-[submodule "vim/vim.symlink/bundle/nerdtree"]
-    path = vim/vim.symlink/bundle/nerdtree
-    url = https://github.com/scrooloose/nerdtree.git
-[submodule "vim/vim.symlink/bundle/vim-powerline"]
-    path = vim/vim.symlink/bundle/vim-powerline
-    url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "vim/vim.symlink/bundle/vim-fugitive"]
-    path = vim/vim.symlink/bundle/vim-fugitive
-    url = https://github.com/tpope/vim-fugitive.git
-[submodule "vim/vim.symlink/bundle/vim-surround"]
-    path = vim/vim.symlink/bundle/vim-surround
-    url = https://github.com/tpope/vim-surround.git
-[submodule "vim/vim.symlink/bundle/vim-hybrid"]
-    path = vim/vim.symlink/bundle/vim-hybrid
-    url = https://github.com/w0ng/vim-hybrid.git
