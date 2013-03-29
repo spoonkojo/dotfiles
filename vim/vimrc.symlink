@@ -19,9 +19,11 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'Shougo/neocomplcache'
 Bundle 'godlygeek/tabular'
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'joonty/vdebug'
 
 filetype plugin indent on
 
@@ -53,3 +55,4 @@ set tabstop=2      " spaces for <Tab>
 
 " NERDTree
 let NERDTreeShowHidden = 1
+let g:nerdtree_tabs_open_on_console_startup = 1
