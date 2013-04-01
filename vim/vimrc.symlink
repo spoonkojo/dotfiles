@@ -24,6 +24,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'joonty/vdebug'
+Bundle 'joonty/vim-phpunitqf'
 Bundle 'majutsushi/tagbar'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplcache'
@@ -38,7 +39,7 @@ filetype plugin indent on
 " Color
 syntax on
 set t_Co=256
-silent! colorscheme hybrid
+silent! colorscheme badwolf
 highlight LineNr guibg=#1f1f1f
 
 " Font
