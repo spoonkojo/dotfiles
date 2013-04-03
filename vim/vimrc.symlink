@@ -57,7 +57,7 @@ endif
 let g:Powerline_symbols = 'fancy'
 
 " General
-set colorcolumn=80 " visibal indicator of column
+set colorcolumn=0  " visibal indicator of column
 set mouse=a        " enable mouse on all modes
 set number         " show line numbers
 set title          " use filename in window title
