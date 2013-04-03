@@ -91,3 +91,6 @@ let NERDTreeIgnore = ['\.DS_Store$', '\.git$']
 let g:neocomplcache_enable_at_startup = 1
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabContextDefaultCompletionType = "<c-n>"
+
+" Syntastic
+let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
