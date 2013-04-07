@@ -32,6 +32,7 @@ Bundle 'ervandew/supertab'
 Bundle 'StanAngeloff/php.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'LStinson/TagmaTasks'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 
@@ -52,6 +53,7 @@ if has('gui_macvim')
   set guioptions-=L
   set guioptions-=R
   set guioptions-=r
+  set guioptions-=e
 endif
 
 " Powerline
@@ -64,6 +66,7 @@ set number         " show line numbers
 set title          " use filename in window title
 set wildmenu       " enhanced cmd line completion
 set nowrap
+set showbreak=↪
 
 " Tabs
 set autoindent     " copy indent from previous line
