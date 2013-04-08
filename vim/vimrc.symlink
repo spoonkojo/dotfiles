@@ -33,6 +33,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'LStinson/TagmaTasks'
 Bundle 'kien/ctrlp.vim'
 Bundle 'spf13/PIV'
+Bundle 'mbbill/undotree'
 
 filetype plugin indent on
 
