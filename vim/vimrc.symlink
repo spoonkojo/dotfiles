@@ -29,10 +29,11 @@ Bundle 'majutsushi/tagbar'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
-Bundle 'StanAngeloff/php.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'LStinson/TagmaTasks'
 Bundle 'kien/ctrlp.vim'
+Bundle 'spf13/PIV'
+Bundle 'mbbill/undotree'
 
 filetype plugin indent on
 
@@ -65,7 +66,7 @@ set mouse=a        " enable mouse on all modes
 set number         " show line numbers
 set title          " use filename in window title
 set wildmenu       " enhanced cmd line completion
-set nowrap
+set wrap
 set showbreak=↪
 
 " Tabs
@@ -101,3 +102,7 @@ let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 
 " TagmaTasks
 let g:TagmaTasksRegexp = '\<TODO\|@todo\>'
+
+" PIV
+map <leader>f <Esc>:EnableFastPHPFolds<CR>
+map <Leader>F <Esc>:DisablePHPFolds<CR>
