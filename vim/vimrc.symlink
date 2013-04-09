@@ -42,6 +42,7 @@ filetype plugin indent on
 
 " Color
 syntax on
+autocmd BufEnter * :syntax sync fromstart   " may slow down vim, but fixes fold
 set t_Co=256
 silent! colorscheme hybrid
 highlight LineNr guibg=#1f1f1f
@@ -68,6 +69,9 @@ set title          " use filename in window title
 set wildmenu       " enhanced cmd line completion
 set wrap
 set showbreak=↪
+
+" Folding
+set foldcolumn=2   " show fold column for mouse interaction
 
 " Tabs
 set autoindent     " copy indent from previous line
