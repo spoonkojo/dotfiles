@@ -35,6 +35,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'spf13/PIV'
 Bundle 'mbbill/undotree'
 Bundle 'groenewege/vim-less'
+Bundle 'nono/vim-handlebars'
+Bundle 'juvenn/mustache.vim'
 
 filetype plugin indent on
 
@@ -72,7 +74,7 @@ set wrap
 set showbreak=↪
 
 " Folding
-set foldcolumn=2   " show fold column for mouse interaction
+set foldcolumn=3   " show fold column for mouse interaction
 
 " Tabs
 set autoindent     " copy indent from previous line
