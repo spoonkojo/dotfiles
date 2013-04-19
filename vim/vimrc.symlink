@@ -32,7 +32,7 @@ Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'LStinson/TagmaTasks'
 Bundle 'kien/ctrlp.vim'
-Bundle 'spf13/PIV'
+"Bundle 'spf13/PIV'
 Bundle 'mbbill/undotree'
 Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
@@ -45,7 +45,7 @@ filetype plugin indent on
 
 " Color
 syntax on
-autocmd BufEnter * :syntax sync fromstart   " may slow down vim, but fixes fold
+"autocmd BufEnter * :syntax sync fromstart   " may slow down vim, but fixes fold
 set t_Co=256
 silent! colorscheme hybrid
 highlight LineNr guibg=#1f1f1f
@@ -74,7 +74,9 @@ set wrap
 set showbreak=↪
 
 " Folding
-set foldcolumn=3   " show fold column for mouse interaction
+"set foldcolumn=3   " show fold column for mouse interaction
+"let g:DisableAutoPHPFolding = 1
+"set nofoldenable   " disable folding
 
 " Tabs
 set autoindent     " copy indent from previous line
@@ -98,6 +100,7 @@ let NERDTreeShowHidden = 1
 let g:nerdtree_tabs_open_on_console_startup = 1
 let g:NERDTreeWinSize = 30
 let NERDTreeIgnore = ['\.DS_Store$', '\.git$']
+map <F2> :NERDTreeToggle<CR>
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup = 1
@@ -111,5 +114,5 @@ let g:syntastic_php_checkers=['php', 'phpcs', 'phpmd']
 let g:TagmaTasksRegexp = '\<TODO\|@todo\>'
 
 " PIV
-map <leader>f <Esc>:EnableFastPHPFolds<CR>
-map <Leader>F <Esc>:DisablePHPFolds<CR>
+"map <leader>f <Esc>:EnableFastPHPFolds<CR>
+"map <Leader>F <Esc>:DisablePHPFolds<CR>
