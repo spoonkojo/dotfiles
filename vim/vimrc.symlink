@@ -37,6 +37,7 @@ Bundle 'mbbill/undotree'
 Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
 Bundle 'juvenn/mustache.vim'
+Bundle 'pangloss/vim-javascript'
 
 filetype plugin indent on
 
@@ -86,10 +87,16 @@ set smarttab       " <BS> removes shiftwidth worth of spaces
 set softtabstop=2  " spaces for editing, e.g. <Tab> or <BS>
 set tabstop=2      " spaces for <Tab>
 
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
+" Show tabs and spaces
+set encoding=utf-8
+set list listchars=tab:→\ ,trail:·
+set list
+
+autocmd Filetype html,hbs,mustache setlocal ts=2 sw=2 expandtab
 autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 autocmd Filetype php setlocal ts=4 sw=4 expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
+"autocmd FileType * if &filetype == 'html' | colorscheme VibrantTango | else | colorscheme hybrid | endif
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -116,3 +123,8 @@ let g:TagmaTasksRegexp = '\<TODO\|@todo\>'
 " PIV
 "map <leader>f <Esc>:EnableFastPHPFolds<CR>
 "map <Leader>F <Esc>:DisablePHPFolds<CR>
+
+" vim-javascript
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
