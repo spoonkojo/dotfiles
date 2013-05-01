@@ -62,6 +62,10 @@ if has('gui_macvim')
   set guioptions-=e
 endif
 
+if has('gui_gnome')
+  set guifont=Menlo\ for\ Powerline\ 9
+endif
+
 " Powerline
 let g:Powerline_symbols = 'fancy'
 
