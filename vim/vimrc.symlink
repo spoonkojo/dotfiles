@@ -156,3 +156,15 @@ if !has('gui_running')
   autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=235
   autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=236
 endif
+
+" vim-git-gutter
+hi GitGutterAdd guifg=darkgreen
+hi GitGutterChange guifg=yellow
+hi GitGutterDelete guifg=darkred
+hi GitGutterChangeDelete guifg=darkred
+
+" remap arrow keys
+nnoremap <down> :bprev<CR>
+nnoremap <up> :bnext<CR>
+nnoremap <left> :tabnext<CR>
+nnoremap <right> :tabprev<CR>
