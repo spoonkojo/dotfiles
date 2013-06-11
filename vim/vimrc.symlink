@@ -22,7 +22,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
-Bundle 'w0ng/vim-hybrid'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'joonty/vdebug'
 Bundle 'joonty/vim-phpunitqf'
 Bundle 'majutsushi/tagbar'
@@ -38,6 +38,13 @@ Bundle 'groenewege/vim-less'
 Bundle 'nono/vim-handlebars'
 Bundle 'juvenn/mustache.vim'
 Bundle 'pangloss/vim-javascript'
+" Color schemes
+Bundle 'sjl/badwolf'
+Bundle 'w0ng/vim-hybrid'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'jelera/vim-gummybears-colorscheme'
+Bundle 'zeis/vim-kolor' 
 
 filetype plugin indent on
 
