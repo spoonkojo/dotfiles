@@ -57,7 +57,7 @@ filetype plugin indent on
 syntax on
 "autocmd BufEnter * :syntax sync fromstart   " may slow down vim, but fixes fold
 set t_Co=256
-silent! colorscheme hybrid
+silent! colorscheme badwolf
 highlight LineNr guibg=#1f1f1f
 
 " Font
@@ -86,6 +86,10 @@ set title          " use filename in window title
 set wildmenu       " enhanced cmd line completion
 set wrap
 set showbreak=↪
+set cursorline
+
+set splitbelow
+set splitright
 
 " Folding
 "set foldcolumn=3   " show fold column for mouse interaction
