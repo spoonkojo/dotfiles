@@ -46,6 +46,8 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'jelera/vim-gummybears-colorscheme'
 Bundle 'zeis/vim-kolor' 
+Bundle 'tomasr/molokai'
+Bundle 'chriskempson/base16-vim'
 
 filetype plugin indent on
 
@@ -167,5 +169,5 @@ hi GitGutterChangeDelete guifg=darkred
 " remap arrow keys
 nnoremap <down> :bprev<CR>
 nnoremap <up> :bnext<CR>
-nnoremap <left> :tabnext<CR>
-nnoremap <right> :tabprev<CR>
+nnoremap <left> :tabprev<CR>
+nnoremap <right> :tabnext<CR>
